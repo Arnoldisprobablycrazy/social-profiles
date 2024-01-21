@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+html{
+   background-color: hsl(0, 0%, 8%);
+   box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+::before, ::after{
+    box-sizing: inherit; 
+ }
+body{
+   font-family: 'Inter';
+   background-color: hsl(0, 0%, 12%);
+   width: 650px;
+   position: relative;
+   margin: 0px auto;
+   height: auto;   
+   display: flex;
+   flex-direction: column; 
+   justify-content: center; 
+   align-items: center;
+   min-height: 100vh;
+   
+}
+.container{
+    display: block;
+    width: 300px;
+    height: 500px;
+   border-radius: 13px; 
+   margin: 6rem auto;   
+}
+.avatar{
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+}
+.avatar img{
+   width: 100px;
+   height: auto;
+   border-radius: 50%;
+}
+.name p{
+   margin: 5px 0;
+   font-weight: 400;
+   text-align: center;
+   color: hsl(0, 0%, 100%);
+   font-size: 25px;
+}
+.name :nth-of-type(2){
+   color: hsl(75, 94%, 57%);
+   font-size: 16px;
+}
+.description{
+   padding: 10px;
+}
+.description p{
+   color:hsl(0, 0%, 100%);
+}
+.contacts{
+   display: flex;
+   justify-content: center;
+   margin: 0px auto;
+   align-items: center;
+   width: 180px;
+   height: 40px;
+   margin: 5px;
+   padding: 20px;
+   background-color: hsl(0, 0%, 20%);
+   color: hsl(0, 0%, 100%);
+   border: none;
+   font-weight: 400;
+}
+.description {
+   padding: 10px;
+   display: flex;
+   flex-direction: column; /* Stack items vertically */
+   align-items: center;
+   text-align: center;
+}
+.contacts {
+   width: 250px;
+   height: 40px;
+   margin: 5px;
+   padding: 20px;
+   background-color: hsl(0, 0%, 20%);
+   color: hsl(0, 0%, 100%);
+   border: none;
+   border-radius: 8px;
+   font-weight: 600;
+   flex: 1; /* Allow buttons to grow and take available space */
+}
+
+.contacts:hover {
+   background-color: hsl(75, 94%, 57%);
+   color: hsl(0, 0%, 8%);
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); 
+   }
+   @media(max-width: 700px) {
+      .container {
+          width: 250px;
+          height: 500px;
+          margin: 5rem auto
+      }
+   }
